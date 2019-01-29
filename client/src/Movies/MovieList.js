@@ -34,10 +34,10 @@ export default class MovieList extends Component {
 }
 
 function MovieDetails({ movie }) {
-  const { title, director, metascore, stars } = movie;
+  const { title, director, metascore, stars, id } = movie;
   return (
     <div className="movie-card">
-      <Link to={`/movie/${movie.id}`} >
+      <Link to={`/movie/${id}`} >
       <h2>{title}</h2>
       </Link>
       
